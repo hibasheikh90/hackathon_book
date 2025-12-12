@@ -38,16 +38,17 @@ graph TB
     B --> E[IMU Plugin]
     B --> F[Diff Drive Plugin]
 
-    C -->|Publishes| G[/camera/image ROS 2 Topic]
-    D -->|Publishes| H[/scan ROS 2 Topic]
-    E -->|Publishes| I[/imu ROS 2 Topic]
-    F -->|Subscribes| J[/cmd_vel ROS 2 Topic]
+    C -->|Publishes| G["/camera/image ROS 2 Topic"]
+    D -->|Publishes| H["/scan ROS 2 Topic"]
+    E -->|Publishes| I["/imu ROS 2 Topic"]
+    F -->|Subscribes| J["/cmd_vel ROS 2 Topic"]
 
     style B fill:#4CAF50
     style G fill:#2196F3
     style H fill:#2196F3
     style I fill:#2196F3
     style J fill:#FF9800
+
 ```
 
 **Common Plugins**:

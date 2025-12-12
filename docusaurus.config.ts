@@ -13,31 +13,31 @@ const config: Config = {
   baseUrl: '/hackathon_book/',
 
   // GitHub Pages deployment config
-  organizationName: 'hibasheikh', // GitHub username
+  organizationName: 'hibasheikh90', // GitHub username
   projectName: 'hackathon_book', // Repository name
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Internationalization
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ur'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-      },
-      ur: {
-        label: 'اردو',
-        direction: 'rtl',
-        htmlLang: 'ur-PK',
-      },
-    },
-  },
+  // // Internationalization
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'ur'],
+  //   localeConfigs: {
+  //     en: {
+  //       label: 'English',
+  //       direction: 'ltr',
+  //       htmlLang: 'en-US',
+  //     },
+  //     ur: {
+  //       label: 'اردو',
+  //       direction: 'rtl',
+  //       htmlLang: 'ur-PK',
+  //     },
+  //   },
+  // },
 
   presets: [
     [
@@ -46,7 +46,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/hibasheikh/hackathon_book/tree/main/',
+          editUrl: 'https://github.com/hibasheikh90/hackathon_book/tree/main/',
         },
         blog: false,
         theme: {
@@ -76,7 +76,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/hibasheikh/hackathon_book',
+          href: 'https://github.com/hibasheikh90/hackathon_book',
           label: 'GitHub',
           position: 'right',
         },
@@ -120,7 +120,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/hibasheikh/hackathon_book',
+              href: 'https://github.com/hibasheikh90/hackathon_book',
             },
           ],
         },

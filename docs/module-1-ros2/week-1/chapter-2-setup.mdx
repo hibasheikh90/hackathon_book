@@ -338,12 +338,13 @@ ros2 run demo_nodes_cpp listener
 
 ```mermaid
 graph LR
-    A[Talker Node] -->|publishes to| B[/chatter topic]
-    B -->|subscribes from| C[Listener Node]
+    A["Talker Node"] -->|publishes to| B["/chatter topic"]
+    B -->|subscribes from| C["Listener Node"]
 
     style A fill:#4CAF50
     style B fill:#2196F3
     style C fill:#FF9800
+
 ```
 
 1. **Talker node** publishes messages to the `/chatter` topic

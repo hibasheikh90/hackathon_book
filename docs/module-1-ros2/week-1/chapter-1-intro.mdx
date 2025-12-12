@@ -98,11 +98,12 @@ ROS 2 organizes robot software into independent **nodes** that communicate via t
 
 ```mermaid
 graph LR
-    A[Camera Node] -->|publishes| B[/camera/image topic]
-    B -->|subscribes| C[Object Detector]
-    B -->|subscribes| D[Video Recorder]
+    A["Camera Node"] -->|publishes| B["/camera/image topic"]
+    B -->|subscribes| C["Object Detector"]
+    B -->|subscribes| D["Video Recorder"]
 
     style B fill:#4CAF50
+
 ```
 
 **Example**: A camera node publishes images to `/camera/image`, and multiple nodes (object detector, video recorder) can subscribe to receive those images.
@@ -139,10 +140,10 @@ sequenceDiagram
 
 ```mermaid
 graph TB
-    A[Your Robot Application<br/>Python/C++ Nodes] --> B[RCL<br/>ROS Client Library]
-    B --> C[DDS Middleware<br/>Fast DDS, Cyclone DDS]
-    C --> D[Operating System<br/>Linux, Windows, macOS]
-    D --> E[Hardware<br/>Sensors, Actuators]
+    A[Your Robot Application<\n>Python/C++ Nodes] --> B[RCL<\n>ROS Client Library]
+    B --> C[DDS Middleware<\n>Fast DDS, Cyclone DDS]
+    C --> D[Operating System<\n>Linux, Windows, macOS]
+    D --> E[Hardware<\n>Sensors, Actuators]
 
     style A fill:#2196F3
     style B fill:#4CAF50
@@ -192,7 +193,7 @@ graph TD
     F[Terrain Mapper] --> E
     G[Footstep Planner] --> E
 
-    E --> H[Joint Actuators<br/>28 DOF]
+    E --> H[Joint Actuators<\n>28 DOF]
 
     style B fill:#4CAF50
     style E fill:#FF9800
@@ -241,10 +242,10 @@ This textbook follows a structured learning path from fundamentals to advanced P
 
 ```mermaid
 graph LR
-    A[Module 1<br/>ROS 2 Fundamentals] --> B[Module 2<br/>Digital Twin Simulation]
-    B --> C[Module 3<br/>NVIDIA Isaac]
-    C --> D[Module 4<br/>VLA Robotics]
-    D --> E[Module 5<br/>Capstone Project]
+    A[Module 1<\n>ROS 2 Fundamentals] --> B[Module 2<\n>Digital Twin Simulation]
+    B --> C[Module 3<\n>NVIDIA Isaac]
+    C --> D[Module 4<\n>VLA Robotics]
+    D --> E[Module 5<\n>Capstone Project]
 
     style A fill:#4CAF50
     style B fill:#2196F3
